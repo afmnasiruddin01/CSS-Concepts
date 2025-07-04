@@ -1,0 +1,65 @@
+// Seperate files
+@import './_resets';
+@import './variables';
+//Functions
+@function weight($weight-name){
+    @return map-get($map: $font-weights, $key: $weight-name )
+}
+//  mixin  
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+//if function
+@mixin theme($light-theme: true){
+    @if $light-theme {
+        background-color: lighten($color: $primary-color, $amount: 100%);
+        color: darken($color: $text-color, $amount: 100%);
+    }
+}
+
+@mixin mobile {
+    @media (max-width: $mobile){
+        @content;
+    }
+}
+body {
+    background-color: $primary-color;
+    color: $text-color;
+    
+}
+
+
+// Nesting
+.main {
+    @include flexCenter(row);
+ //math calculation   
+    width:100%-20%;
+    margin: 0 auto;
+    // & is equal is parents
+    // #{&} is interpolation, means we want full thing of parent selectors
+    
+    #{&}_paragraph1 {
+        font-weight: weight(regular);
+        &:hover {
+            color: pink;
+        }
+    }
+//extending
+    #{&}_paragraph2 {
+        @extend .main_paragraph1;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+    @include mobile(){
+        flex-direction: column;
+    }
+}
+
+.light {
+    @include theme($light-theme: true)
+}
