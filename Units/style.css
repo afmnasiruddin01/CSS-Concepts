@@ -1,0 +1,30 @@
+.container {
+    background-color: aquamarine;
+    border: 1px solid blue;
+    box-sizing: border-box;
+    width:80%;
+}
+.item-1 {
+    font-size: 16px;
+    
+}
+.item-2 {
+    font-size: 2em;
+    
+}
+.item-3 {
+    font-size: 1rem;
+    
+}
+.item-4 {
+    font-size: 1ch;
+    
+}
+.item-5 {
+    font-size: 5vh;
+    
+}
+.item-6 {
+    font-size: 5vw;
+    
+}

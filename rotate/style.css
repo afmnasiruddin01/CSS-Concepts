@@ -1,0 +1,17 @@
+.box {
+    height: 300px;
+    width: 300px;
+    background-color: cyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4em;
+    transition: transform 2s ease;
+    
+    /* transform: rotate(45deg); */
+    /* transform:rotate(1turn) translate(200px, 300px) scale(1.5, 2) skew(30deg,20deg); */
+    
+
+    
+}
+    

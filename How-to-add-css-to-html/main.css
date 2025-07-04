@@ -1,0 +1,31 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+#product-overview {
+            background: #ff1b68;
+        }
+/* 12. Combinator selectors use */
+/* 13. a)+ Adjacent combinator, b) ~ General sibling, c) > child combinator, d) descendent combinaoris */
+#product-overview h1 {
+    color: white;
+    /* 4. standard fonts:- sans-serif, serif. Look into the "Google Font" and get the link, paste */
+    font-family: 'Anton', sans-serif;
+}
+
+/* 6. Selectors are; Elements, . class, # Id, [Attribute], * Universal (rarely use) */
+
+.section-title {
+    color: #2ddf5c;
+    /* font-family: inherit; 11. to sue default one */
+}
+/* 8. Cascade stype and specificity */
+/* 9.  Specificity (More specification will win, like combinator):
+    1. Inline style
+    2. #ID selector
+    3. .class, :psudo class and [attribute] selector 
+    4. Tags and ::psudo-element selector 
+    5. Inheretance ex- body, *(lowest)
+*/
+
+/* 10. Inheritance:  */
+

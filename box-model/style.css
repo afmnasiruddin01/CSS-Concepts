@@ -1,0 +1,15 @@
+.container {
+    box-sizing: border-box;
+    border: 2px solid blue;
+    background-color: aqua;
+    width: 500px;
+    height: 50vh;
+}
+h3 {
+    font-size: 2rem;
+    border: 2px dotted olivedrab;
+    background-color: beige;
+    padding: 10px;
+    margin: 20px 5px 20px;
+    
+}
